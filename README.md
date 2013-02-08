@@ -1,4 +1,4 @@
-social-media-importer
+Social Media Importer
 =====================
 
-WordPress Plugin
+A WordPress Plugin
