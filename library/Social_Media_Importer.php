@@ -65,6 +65,10 @@ class Social_Media_Importer {
         //echo '<code> ' . __FUNCTION__ . '<code>';
     }
     
+    public static function uninstall(){
+        //echo '<code> ' . __FUNCTION__ . '<code>';
+    }
+    
     public function admin_init(){
         FB::group(__CLASS__ . '.' . __FUNCTION__, array('Collapsed' => true));
         
@@ -146,8 +150,11 @@ class Social_Media_Importer {
     }
     
     public function savePluginSettings($section, $settings){
-        $optionKey = self::SETTING_PREFIX . '_' . $section;
-        return update_option($optionKey, json_encode($settings));
+        $optionKey  = self::SETTING_PREFIX . '_' . $section;
+        $optionData = $settings; //json_encode($settings);
+        
+        $result = update_option($optionKey, $optionData);
+        return $result;
     }
     
     public function getPluginSettings($section = '', $key = ''){
@@ -189,9 +196,9 @@ class Social_Media_Importer {
             $optionKey             = self::SETTING_PREFIX . '_' . $section;
             $selectedSettingsValue = get_option($optionKey, '');
             
-            if(!empty($selectedSettingsValue)){
-                $selectedSettingsValue = json_decode($selectedSettingsValue, true);
-            }
+            //if(!empty($selectedSettingsValue)){
+            //    $selectedSettingsValue = json_decode($selectedSettingsValue, true);
+            //}
             
             foreach($selectedSettings as $index => $setting){
                 $selectedSettings[$index]['value'] = isset($selectedSettingsValue[ $setting['key'] ]) ? $selectedSettingsValue[ $setting['key'] ] : '';

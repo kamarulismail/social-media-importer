@@ -31,6 +31,7 @@ if(!class_exists('Social_Media_Importer')){
     // Installation and uninstallation hooks
     register_activation_hook(__FILE__, array('Social_Media_Importer', 'activate'));
     register_deactivation_hook(__FILE__, array('Social_Media_Importer', 'deactivate'));
+    register_uninstall_hook(__FILE__,  array('Social_Media_Importer', 'uninstall'));
     
     $pluginLibraryPath = plugin_dir_path(__FILE__) . 'library/';
     define('PLUGIN_LIBRARY_PATH', $pluginLibraryPath);
