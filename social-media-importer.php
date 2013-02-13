@@ -33,6 +33,7 @@ if(!class_exists('Social_Media_Importer')){
     register_deactivation_hook(__FILE__, array('Social_Media_Importer', 'deactivate'));
     
     $pluginLibraryPath = plugin_dir_path(__FILE__) . 'library/';
+    define('PLUGIN_LIBRARY_PATH', $pluginLibraryPath);
     
     //DEBUGGER
     if (!class_exists('FB', false)) {
@@ -42,7 +43,8 @@ if(!class_exists('Social_Media_Importer')){
         ob_start();
     }
     
-    //
+    //LOAD CLASS
+    global $social_media_importer;
     require_once($pluginLibraryPath . 'social_media_importer.php');
     $social_media_importer = new Social_Media_Importer();
 }

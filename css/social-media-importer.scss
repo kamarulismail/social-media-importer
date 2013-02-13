@@ -1,0 +1,42 @@
+
+.nav-tab-container-wrapper {
+	//margin-top: 5px;
+	max-width: 780px;
+
+	.nav-tab-container {
+		//border: 1px solid #CCCCCC;
+		//border-top: none;
+		min-height: 300px;
+		display: none;
+
+		&.nav-tab-container-active {
+			display: block;
+		}
+	}
+
+	.postbox {
+		h3 {
+			cursor: default;
+		}
+	}
+
+}
+
+.smi-form {
+
+	.smi-row-input {
+		padding: 5px 10px 15px;
+		background: none #ffffff;
+	}
+
+	.smi-title {
+		border-bottom: 1px solid #DFDFDF;
+    	margin: 5px 0 15px;
+    	padding: 15px 0 5px;
+	}
+
+	.smi-row-button {
+		border-top: 1px solid #DFDFDF;
+		padding: 10px;
+	}
+}

@@ -1,0 +1,20 @@
+.nav-tab-container-wrapper {
+  max-width: 780px; }
+  .nav-tab-container-wrapper .nav-tab-container {
+    min-height: 300px;
+    display: none; }
+    .nav-tab-container-wrapper .nav-tab-container.nav-tab-container-active {
+      display: block; }
+  .nav-tab-container-wrapper .postbox h3 {
+    cursor: default; }
+
+.smi-form .smi-row-input {
+  padding: 5px 10px 15px;
+  background: none #ffffff; }
+.smi-form .smi-title {
+  border-bottom: 1px solid #DFDFDF;
+  margin: 5px 0 15px;
+  padding: 15px 0 5px; }
+.smi-form .smi-row-button {
+  border-top: 1px solid #DFDFDF;
+  padding: 10px; }
