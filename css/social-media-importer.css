@@ -18,3 +18,42 @@
 .smi-form .smi-row-button {
   border-top: 1px solid #DFDFDF;
   padding: 10px; }
+.smi-form .smi-input-text {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #DFDFDF;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  padding: 4px 2px;
+  font-size: 12px; }
+  .smi-form .smi-input-text:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: 0 0 8px rgba(82, 168, 236, 0.6); }
+
+.admin-notice {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #CCCCCC;
+  padding: 8px 35px 8px 14px;
+  margin: 2px 0;
+  background-color: #DFDFDF; }
+  .admin-notice.admin-notice-success {
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #468847; }
+  .admin-notice.admin-notice-error {
+    background-color: #F2DEDE;
+    border-color: #EED3D7;
+    color: #B94A48; }
+  .admin-notice.admin-notice-info {
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    color: #3A87AD; }
+  .admin-notice.admin-notice-warn {
+    background-color: #FFFFE0;
+    border-color: #E6DB55; }

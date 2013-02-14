@@ -1,8 +1,7 @@
 <?php
 //
 require_once('../../../wp-config.php');
-//define('PLUGIN_LIBRARY_PATH', plugin_dir_path(__FILE__) . 'library/');
-//
+
 $calledFunction = isset($_REQUEST['f']) ? $_REQUEST['f'] : 'default';
 if (function_exists($calledFunction)) {
     $calledFunction();
@@ -31,7 +30,7 @@ function save_general_options(){
     }
     
     parse_str($data, $postData);
-    $serverResponse['debug']['data']  = $postData;
+    $serverResponse['debug']['data'] = $postData;
     
     $section = $postData['section'];
     unset($postData['section']);

@@ -153,7 +153,7 @@ class Social_Media_Importer {
         $optionKey  = self::SETTING_PREFIX . '_' . $section;
         $optionData = $settings; //json_encode($settings);
         
-        $result = update_option($optionKey, $optionData);
+        $result = update_option($optionKey, $optionData);        
         return $result;
     }
     
