@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Social Media Importer
-Plugin URI: http://kamarul.x/social-media-importer
+Plugin URI: https://github.com/kamarulismail/social-media-importer
 Description: A plugin to import social media contents (Facebook, Flickr, Instagram, YouTube) to wordpress.
 Version: 1.0
 Author: Kamarul Ariffin Ismail
-Author URI: http://kamarul.x
+Author URI: https://github.com/kamarulismail/
 License: GPL2 or later
 */
 
